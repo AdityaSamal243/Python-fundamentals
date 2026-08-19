@@ -11,7 +11,7 @@ def main():
     print(values)
     
     print(values.index(30))
-    # print(values.index(130)) # if the values is not present in list it throws valueError
+    # print(values.index(130)) # if the value is not present in list it throws valueError
     
     # if you don't want error you can use "in" operation
     
@@ -23,6 +23,20 @@ def main():
     
     values.reverse() # does not return anything, it only reverses
     print(values)
+    
+    print(values.pop(-2))
+    print(values)
+    
+    li2 = values[:]
+    print("list2=",li2)
+    
+    print(li2 is values) # False, because they are different objects
+    
+    
+    squares = [x**2 for x in range(10)]
+    print(squares)
+    
+    print([x*2 for x in values])
     
 if __name__ == "__main__":
     main()

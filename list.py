@@ -28,3 +28,6 @@ def main():
     
 if __name__=="__main__":
     main()
+    
+    
+# list can be used as stack due to its append and pop methods.
